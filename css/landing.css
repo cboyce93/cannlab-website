@@ -71,7 +71,7 @@ Div tag styles
 	left: 0;
 	top: 0;
 	background-size: 100% 100%;
-	background-image: url(file:///C:/Users/Cameron/cannlab/img/landing/bg.png);
+	background-image: url("../img/landing/bg.png");
 	background-color: #777;
 	transition: background-color 0.4s ease-in;
 }
@@ -147,7 +147,7 @@ Font-face styles
 
 @font-face {
 	font-family: URW;
-	src: url(file:///C:\Users\Cameron\cannlab\fonts\urw-palladio-l-roman.ttf);
+	src: url("../fonts/urw-palladio-l-roman.ttf");
 }	
 
 

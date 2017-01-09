@@ -69,7 +69,7 @@ Div tag styles
 	left: 0;
 	top: 0;
 	background-size: 100% 100%;
-	background-image: url(../img/landing/bg.png);
+	background-image: url("../img/landing/bg.png");
 	background-color: #105a7f;
 	background-repeat: repeat-y;
 	transition: background-color 0.4s ease-in;
@@ -121,11 +121,15 @@ Div tag styles
 
 /* entire container, keeps perspective */
 .flip-container {
+	display:block;
+	background-color: blue;
 	perspective: 1000px;
+	width: 140px;
 }
 	/* flip the pane when hovered */
 	.flip-container:hover .flipper, .flip-container.hover .flipper {
 		transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
 	}
 
 .flip-container, .front, .back {
@@ -137,6 +141,7 @@ Div tag styles
 /* flip speed goes here */
 .flipper {
 	transition: 0.6s;
+	-moz-transition: 0.6s;
 	transform-style: preserve-3d;
 	position: relative;
 }
@@ -144,6 +149,8 @@ Div tag styles
 /* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -168,6 +175,10 @@ Div tag styles
 	display: none;
 }
 
+/*********************************************************************
+Navigation styles
+*********************************************************************/
+
 #nav {
 	width: 82%;
 	float: right;
@@ -183,36 +194,108 @@ Div tag styles
 	transition: padding 0.4s ease;
 }
 
-#nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+.nav {
+    	list-style: none;
+    	float: right; /* Clear floats */
+    	width: 100%;
 }
 
-#nav li {
-    float: right;
+.nav li {
+    	float: right;
+    	position: relative;
 }
 
-#nav li a {
-    display: inline-block;
-    color: #135c6d;
+.nav a {
+    	display: inline-block;
+    	color: #135c6d;
 	font-size: 10.5px;
-	letter-spacing: 2px;
-    text-align: center;
-    padding: 10px 18px 10px 18px;
+	letter-spacing: 1px;
+    	text-align: center;
+    	padding: 10px 18px 10px 18px;
 	margin: 0 0 0 4px;
-    text-decoration: none;
+    	text-decoration: none;
 	border-radius: 12px;
 	transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
-#nav li a:hover {
-	background-color: #105a7f;
-	transition: background-color 0.15s ease-in, color 0.15s ease-in;;
+.nav a:hover {
+    	background-color: #105a7f;
+	transition: background-color 0.15s ease-in, color 0.15s ease-in;
 	color: #FFF;
 }
 
+/*--- DROPDOWN ---*/
+
+.nav ul {
+	background-color: #fff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+	background: rgba(255,255,255,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+	list-style: none;
+	position: absolute;
+	opacity: 0;
+}
+
+.nav ul li {
+	float: none;
+	
+}
+
+.nav ul a {
+	white-space: nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+
+.nav li:hover ul { /* Display the dropdown on hover */
+	opacity: 1;
+}
+
+.nav li:hover a { /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+	background-color: #105a7f;
+	color: #CCC;
+}
+
+.nav li:hover a:hover { /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+	color: #FFF;
+}
+
+.nav li:hover ul li a:hover { /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+	background-color: #105a7f;
+}
+
+.nav li:hover a { /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+	background-color: #105a7f;
+}
+
+.stem {
+	transition: all 0.15s ease-in;
+	z-index: 1;
+}
+
+.first {
+	margin: 2px 0 0 0;
+}
+
+.second {
+	margin: 32px 0 0 0;
+}
+
+.third {
+	margin: 62px 0 0 0;
+}
+
+.publications_fill {
+	position: absolute;
+	width: 133px;
+	height: 90px;
+	background-color: #105a7f;
+	z-index: 0;
+	border-radius: 0px;
+	margin: -10px 0 0 0;
+	left: 4px;
+}
+
+.fader {
+	opacity: 0;
+	transition: all 0.15s ease-in;
+}
 
 /*********************************************************************
 Slider styles
@@ -342,7 +425,7 @@ About styles
 	min-width: 1100px;
 	padding: 3% 0 3% 0;
 	overflow: hidden;
-	background-image: url(../img/cnn/mri-scanner.jpg);
+	background-image: url("../img/cnn/mri-scanner.jpg");
 	background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -456,7 +539,7 @@ About styles
 	padding: 3% 0 3% 0;
 	background-color: #DDD; 
 	overflow: hidden;
-	background-image: url(../img/landing/bg.png);
+	background-image: url("../img/landing/bg.png");
 	vertical-align: middle;
 	border-bottom-style: solid;
 	border-bottom-width: 10px;
@@ -471,7 +554,7 @@ About styles
 	background-color: #FFF; 
 	overflow: hidden;
 	background-color: #135c6d;
-	background-image: url(../img/can/slider/mri-scanner.jpg);
+	background-image: url("../img/can/slider/mri-scanner.jpg");
 	background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -563,7 +646,7 @@ Publications styles
 
 #publications {
 	width: 100%;
-	background-image: url(../img/cnn/mri-scanner.jpg);
+	background-image: url("../img/cnn/mri-scanner.jpg");
 	background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -624,11 +707,11 @@ People styles
 
 #people {
 	width: 100%;
-	background-image: url(../img/cnn/mri-scanner.jpg);
+	background-image: url("../img/cnn/mri-scanner.jpg");
 	background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	background-size: cover;
 	padding: 3% 0 0 0;
 }
 
@@ -650,7 +733,7 @@ People styles
 #people #person {
 	width: 100%;
 	margin: 0 auto;
-	background-image: url(../img/cnn/bg1.png);
+	background-image: url("../img/cnn/bg1.png");
 	background-repeat: repeat-x;
 	padding: 3% 0;
 	overflow: hidden;
@@ -660,7 +743,7 @@ People styles
 #people #person_two {
 	width: 100%;
 	margin: 0 auto;
-	background-image: url(../img/cnn/bg2.png);
+	background-image: url("../img/cnn/bg2.png");
 	background-repeat: repeat-x;
 	padding: 3% 0;
 	overflow: hidden;
@@ -753,7 +836,8 @@ Funding Sources styles
 #funding {
 	position: relative;
 	width: 100%;
-	height: 200px;
+	height: 26vh;
+	padding: 2vh 0 0 0;
 	background-color: #FFF;
 	border-top-style: solid;
 	border-top-width: 10px;
@@ -762,7 +846,6 @@ Funding Sources styles
 
 #funding_content {
 	width: 86%;
-	max-height: 200px;
 	margin: 20px auto;
 }
 
@@ -781,18 +864,17 @@ Funding Sources styles
 }
 
 
-
 /*********************************************************************
 Font-face styles
 *********************************************************************/
 
 @font-face {
 	font-family: 'URW';
-	src: url('../fonts/urw-palladio-l-roman.ttf');
+	src: url("../fonts/urw-palladio-l-roman.ttf");
 }
 
 @font-face {
 	font-family: 'Amiri';
-	src: url('../fonts/Amiri-Regular.ttf');
+	src: url("../fonts/Amiri-Regular.ttf");
 }
 

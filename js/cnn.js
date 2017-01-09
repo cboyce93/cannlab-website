@@ -60,8 +60,7 @@ $(window).on("load", function() {
 	    }, 1000, 'swing', function () {
 	        window.location.hash = target;
 	    });
-	});
-
+	});	
 })
 
 /*********************************************************************
@@ -90,4 +89,5 @@ $(window).scroll(function() {
         $('#logo_sticky').css("display", "none");
     }
 });
+
 

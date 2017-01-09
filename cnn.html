@@ -7,9 +7,9 @@ Last Updated: 12/20/2016
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="file:///C:\Users\Cameron\cannlab\css\cnn.css">
+<link rel="stylesheet" type="text/css" href="css/cnn.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="file:///C:\Users\Cameron\cannlab\js\cnn.js"></script>
+<script src="js/cnn.js"></script>
 </head>
 <body>
 	<!-- MAIN WRAPPER -->
@@ -21,28 +21,29 @@ Last Updated: 12/20/2016
 				<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 					<div class="flipper">
 						<div class="front">
-							<img src="file:///C:\Users\Cameron\cannlab\img\cnn\logo-cnn.png" alt="Cognitive Neuroscience & Neuro-Intervention Lab"/>
+							<img src="img/cnn/logo-cnn.png" alt="Cognitive Neuroscience & Neuro-Intervention Lab"/>
 						</div>
 						<div class="back">
-							<img src="file:///C:\Users\Cameron\cannlab\img\can\logo-can.png" alt="Cognition & Aging Neuroscience Lab"/>
+							<img src="img/can/logo-can.png" alt="Cognition & Aging Neuroscience Lab"/>
 						</div>
 					</div>
 				</div>
 				<!-- Logo End!!! -->
 				
 				<!-- Alt logo for sticky header -->
-				<div id="logo_sticky"><img src="file:///C:\Users\Cameron\cannlab\img\cnn\logo-cnn-sticky.png"/></div>
+				<div id="logo_sticky"><img src="img/cnn/logo-cnn-sticky.png"/></div>
 				
 				<!-- Navigation -->
 				<div id="nav">
-					<ul>
+					<ul class="nav">
 						<li><a href="#">SUPPORT</a></li>
 						<li><a href="#">PARTICIPATE</a></li>
 						<li><a href="#area_header.people">PEOPLE</a></li>
-						<li><a href="#area_header.publications">PUBLICATIONS</a>
-							<ul><a href="#area_header.publications">PUBLICATIONS</a></ul>
-							<ul><a href="#area_header.publications">PUBLICATIONS</a></ul>
-							<ul><a href="#area_header.publications">PUBLICATIONS</a></ul>
+						<li class="root"><a href="#area_header.publications">PUBLICATIONS</a>
+							<ul class="stem first"><a href="#publications.journal_articles">Journal Articles</a></ul>
+							<ul class="stem second"><a href="#pointer.book_chapters">Book Chapters</a></ul>
+							<ul class="stem third"><a href="#area_header.publications">Funding Sources</a></ul>
+							<ul class="fader"><div class="publications_fill"></div></ul>
 						</li>
 						<li><a href="#area_header.research">RESEARCH</a>
 						<li><a href="#">ABOUT</a></li>
@@ -59,9 +60,9 @@ Last Updated: 12/20/2016
 		<div id="dummy_slider"></div>
 		<!-- Content -->
 		<div id="slider">
-			<img class="active" src="file:///C:\Users\Cameron\cannlab\img\can\slider\mri-scanner.jpg" alt="MRI Scanner" />
-			<img class="hide" src="file:///C:\Users\Cameron\cannlab\img\can\slider\pointing-at-mri.jpg" alt="Pointing at MRI" />	
-			<img class="hide" src="file:///C:\Users\Cameron\cannlab\img\can\slider\joint-mri.jpg" alt="Joint MRI" />	
+			<img class="active" src="img/can/slider/mri-scanner.jpg" alt="MRI Scanner" />
+			<img class="hide" src="img/can/slider/pointing-at-mri.jpg" alt="Pointing at MRI" />	
+			<img class="hide" src="img/can/slider/joint-mri.jpg" alt="Joint MRI" />	
 		</div>
 		<!-- Slider text box -->
 		<div id="text_box">
@@ -97,19 +98,19 @@ Last Updated: 12/20/2016
 			<div id="div_header"><h4>Areas of Interest</h4></div>
 			<div id="four_column">
 				<div class="box">
-					<img class="circle" src="file:///C:\Users\Cameron\cannlab\img\cnn\1.png"/>
+					<img class="circle" src="img/cnn/1.png"/>
 					<p><i>Neural correlates of higher cognitive (i.e. executive control) functions in normal aging, brain injury and disease.</i></p>
 				</div>
 				<div class="box">
-					<img class="circle" src="file:///C:\Users\Cameron\cannlab\img\cnn\2.png"/>
+					<img class="circle" src="img/cnn/2.png"/>
 					<p><i>Neurorehabilitation interventions to enhance cognitive functioning in normal aging and neurological populations.</i></p>
 				</div>
 				<div class="box">
-					<img class="circle" src="file:///C:\Users\Cameron\cannlab\img\cnn\3.png"/>
+					<img class="circle" src="img/cnn/3.png"/>
 					<p><i>Integration of brain and behavioural measures in neuropsychological assessment.</i></p>
 				</div>
 				<div class="box_right">
-					<img class="circle" src="file:///C:\Users\Cameron\cannlab\img\cnn\4.png"/>
+					<img class="circle" src="img/cnn/4.png"/>
 						<p><i>Assessment of cognitive capacity in real-world settings.</i></p>
 				</div>
 			</div>
@@ -124,7 +125,7 @@ Last Updated: 12/20/2016
 		<div id="research">
 			<div id="research_content">
 				<div class="box">
-					<img class="circle" src="file:///C:\Users\Cameron\cannlab\img\cnn\studies\1.jpg"/>
+					<img class="circle" src="img/cnn/studies/1.jpg"/>
 					<h4>Neurocognitive Aging &<br /> Executive Functions (D.E.F.)</h4>
 					<h6>Project Lead: Sabrina Lemire-Rodger<br />Other researcher(s): Jasmin Amin, Navena Lingum</h6>
 					<p>In this project, we are examining the neural networks that contribute to executive functioning 
@@ -133,7 +134,7 @@ Last Updated: 12/20/2016
 						regulates our behaviour.</p>
 				</div>
 				<div class="box_right">
-					<img class="circle" src="file:///C:\Users\Cameron\cannlab\img\cnn\studies\2.jpg"/>
+					<img class="circle" src="img/cnn/studies/2.jpg"/>
 					<h4>Famous Places <br />& Faces (F.P.F.)</h4>
 					<h6>Project Lead: Benjamin Cassidy<br />Other researcher(s): Fazila Ikram, Kiarash Salehigilani</h6>
 					<p>We are investigating neural network contributions to processing of faces and places and how connectivity changes across the lifespan support higher visual processing.</p>
@@ -146,13 +147,13 @@ Last Updated: 12/20/2016
 		<div id="research_two">
 			<div id="research_content">
 				<div class="box">
-					<img class="circle two" src="file:///C:\Users\Cameron\cannlab\img\cnn\studies\3.jpg"/>
+					<img class="circle two" src="img/cnn/studies/3.jpg"/>
 					<h4 class="two">Goal-Directed<br /> Cognition (Goal-D)</h4>
 					<h6>Project Lead: Benjamin Cassidy<br />Other researcher(s): Katie Walsh (and all volunteers)</h6>
 					<p>This projects investigates differences in goal-directed cognition in young versus older adults using behavioural assessments and neuroimaging.</p>
 				</div>
 				<div class="box_right">
-					<img class="circle" src="file:///C:\Users\Cameron\cannlab\img\cnn\studies\4.jpg"/>
+					<img class="circle" src="img/cnn/studies/4.jpg"/>
 					<h4>Research Examining Age &<br /> Cognitive Health (R.E.A.C.H.)</h4>
 					<h6>Project Lead: Areeba Adnan<br />Other researcher(s): Karin Kantarovich</h6>
 					<p>This project's primary aim is to investigate neural patterns of decline observed in goal-directed cognition in healthy aging and how these patterns can be changed using cognitive intervention.</p>
@@ -166,14 +167,14 @@ Last Updated: 12/20/2016
 		<div id="area_header" class="publications">
 			<div id="area_tagline"><h4>Publications</h4></div>
 		</div>
-		<div id="publications">
+		<div id="publications" class="journal_articles">
 			<h4>----&nbsp; Journal Articles &nbsp;----</h4>
 			<div id="journal_articles">
 				<p>Hunt, A., Turner, G.R., Polatajko, H., Bottari, C., Dawson, D. (2013) Executive function, self-regulation and attribution in acquired brain injury:  a scoping review. Neuropsychological Rehabilitation.<br /><br />
 				Middleton, L., Lam, B., Fahmi, H., Black, S.E., McIlroy, W., Stuss, D., Danells, C., Ween, J. &amp; Turner, G.R.  (In press). Prevalence of domain-specific cognitive impairment in sub-acute and chronic stroke. 
 				Neurorehabilitation.<br /><br />
 				Spreng, R.N. &amp; Turner, G.R. (2013). Structural covariance of the default network in healthy and pathological aging. Journal of Neuroscience, 33(38). 15226-15234.<br /><br />
-				Patel, R., Spreng, R.N. &amp; Turner, G.R. (2013). Functional brain changes following cognitive and motor skills training: A quantitative meta-analysis. Neurorehabilitation and Neural Repair, 27, 187–199.<br /><br />
+				Patel, R., Spreng, R.N. &amp; Turner, G.R. (2013). Functional brain changes following cognitive and motor skills training: A quantitative meta-analysis. Neurorehabilitation and Neural Repair, 27, 187-199.<br /><br />
 				Spreng, R.N., Sepulcre, J., Turner, G.R., Stevens, W.D., &amp; Schacter, D.L. (2013). Intrinsic architecture underlying the relations among the default, dorsal attention, and frontoparietal control networks of the 
 				human brain. Journal of Cognitive Neuroscience. 25, 74-86.<br /><br />
 				Turner, G.R., McIntosh, A.R., Levine, B. (2012). Dissecting altered functional engagement in TBI and other patient groups through connectivity analysis: one goal, many paths (a response to Hillary). Frontiers 
@@ -192,7 +193,7 @@ Last Updated: 12/20/2016
 				Frontiers in Systems Neuroscience, 5:9, doi: 10.3389/fnsys.2011.00009<br /><br />
 				Levine, B., Schweizer, T.A., O’Connor, C., Turner, G.R., Gillingham, S., Stuss, D.T., Manly, T., Robertson, I.H. (2011). Rehabilitation of executive functioning in patients with frontal lobe brain damage: 
 				A randomized control trial of Goal Management Training. Frontiers in Human Neuroscience, 5:9, doi: 10.3389/fnhum.2011.00009<br /><br />
-				Koshimori, Y., Turner, G.R. and Green, R.E.A. (2010). Research Digest: Mild-traumatic brain injury – a diagnostic challenge. Neuropsychological Rehabilitation. 20(3), 471-47<br /><br />
+				Koshimori, Y., Turner, G.R. and Green, R.E.A. (2010). Research Digest: Mild-traumatic brain injury - a diagnostic challenge. Neuropsychological Rehabilitation. 20(3), 471-47<br /><br />
 				Koshimori, Y., Turner, G.R., Mikulis, D., Crawley, A., &amp; Green, R.E.A. (2010) Diffusion tensor  imaging vs conventional MRI for single case diagnosis of traumatic brain injury in spinal cord injury patients. 
 				Brain Injury, 24(3), 458-459.<br /><br />
 				Green, R.E.A. and Turner, G.R. (2010). Growing evidence for influence of meditation on brain and behaviour. Neuropsychological Rehabilitation.<br /><br />
@@ -208,6 +209,7 @@ Last Updated: 12/20/2016
 				Journal of Cognitive Neuroscience. 1633-1646.
 				</p>
 			</div>
+			<div id="pointer" class="book_chapters"></div>
 			<h4>----&nbsp; Book Chapters &nbsp;----</h4>
 			<div id="book_chapters">
 				<p>Turner, G.R. &amp; D'Esposito, M., (2012). Neurorehabilitation of executive functions. To appear in Textbook of neural repair and rehabilitation 2nd edition. Selzer (Ed.).<br /><br />
@@ -224,12 +226,13 @@ Last Updated: 12/20/2016
 		<!-- FUNDING SOURCES -->
 		<div id="funding">	
 			<div id="funding_content">
-				<img class="box" src="file:///C:\Users\Cameron\cannlab\img\cnn\nserc.jpg" alt="NSERC" />
-				<img class="box" src="file:///C:\Users\Cameron\cannlab\img\cnn\cihr.jpg" alt="CIHR" />	
-				<img class="box" src="file:///C:\Users\Cameron\cannlab\img\cnn\canadian-partnership-for-stroke-recovery.jpg" alt="CPSR" />	
-				<img class="box_right" src="file:///C:\Users\Cameron\cannlab\img\cnn\york-university.png" alt="York University" />	
+				<img class="box" src="img/cnn/nserc.jpg" alt="NSERC" />
+				<img class="box" src="img/cnn/cihr.jpg" alt="CIHR" />	
+				<img class="box" src="img/cnn/canadian-partnership-for-stroke-recovery.jpg" alt="CPSR" />	
+				<img class="box_right" src="img/cnn/york-university.png" alt="York University" />	
 			</div>
 		</div>
+		
 		<!-- END!!! FUNDING SOURCES -->
 
 		<!-- PEOPLE -->
@@ -239,7 +242,7 @@ Last Updated: 12/20/2016
 		<div id="people">
 			<div id="person_header"><h4>Principal Investigator</h4></div>
 			<div id="person">
-				<div id="picture" class="gary"><img src="file:///C:\Users\Cameron\cannlab\img\cnn\people\gary-turner.jpg" alt="Gary Turner" /></div>
+				<div id="picture" class="gary"><img src="img/cnn/people/gary-turner.jpg" alt="Gary Turner" /></div>
 				<div id="description"><h4>Gary R. Turner, Ph.D., C Psych.</h4>
 					<h6>Assistant Professor<br />
 						Department of Psychology<br />
@@ -258,7 +261,7 @@ Last Updated: 12/20/2016
 			</div>
 			<div id="person_header" class="in"><h4>Graduate Students</h4></div>
 			<div id="person_two">
-				<div id="picture"><img src="file:///C:\Users\Cameron\cannlab\img\cnn\people\christina-van-den-brink.jpg" alt="Gary Turner" /></div>
+				<div id="picture"><img src="img/cnn/people/christina-van-den-brink.jpg" alt="Christina van den Brink" /></div>
 				<div id="description" class="christina"><h4>Christina van den Brink, MA, Ph.D. Student (1st year)</h4>
 					<p>I am a first year PhD student in the Clinical Psychology program (Neuropsychology stream). I defended my Masters this summer investigating sex differences in the influence of brain and lifestyle factors on neurocognitive aging. Broadly, I am interested in investigating mechanisms influencing neuroplasticity in order to ultimately inform treatment intervention and promote brain health. When I'm not in the lab, I love to hike, cook, and be outdoors.
 					</p>
@@ -266,7 +269,7 @@ Last Updated: 12/20/2016
 			</div>
 			<div id="person_header" class="in"><h4>Undergraduate Students</h4></div>
 			<div id="person">
-				<div id="picture"><img src="file:///C:\Users\Cameron\cannlab\img\cnn\people\anas-saleh.jpg" alt="Gary Turner" /></div>
+				<div id="picture"><img src="img/cnn/people/anas-saleh.jpg" alt="Anas Saleh" /></div>
 				<div id="description"><h4>Anas Saleh</h4>
 					<h6>Project Manager, Undergraduate Honours Thesis 2016</h6>
 					<p>I am a senior at York University completing my BSc Honours in Psychology. I joined the CANN Lab as a research assistant in November 2014, and then went on to complete my honours thesis under the supervision of Dr. Gary Turner where I studied the cognitive mechanisms underlying attention. Currently, I am working on a follow-up study that I developed with PhD candidate, Sabrina Lemire-Rodger, to further investigate the relationship between the different components of goal-directed attentional control. My interests in neuropsychology are broad, although I have a particular interest in how memory and executive functioning change over the course of one's lifetime. Outside the lab, I enjoy reading, listening to music, and keeping up to date with politics.
