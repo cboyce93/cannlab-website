@@ -296,6 +296,61 @@ Navigation styles
 	transition: all 0.15s ease-in;
 }
 
+
+/*********************************************************************
+Participate styles
+*********************************************************************/
+
+.participate {
+	position: fixed;
+	display: block;
+	z-index: 9999;
+	top: 55vh;
+	left: -14px;
+	width: 60px;
+	height: 46px;
+	background-color: white;
+	opacity: 0.7;
+	border-radius: 5%;
+}
+.button_wrap{
+    position:absolute;
+}
+
+.button_aRight{
+    width:60px;
+    height:46px;
+    background-color:#093d6f;
+    color:#fff;
+    top:0px;
+    left:-10px;
+    position:absolute;
+    text-align:right;
+}
+.button_aRight span{
+    display:none;
+}
+.button_bRight{
+    width:60px;
+    height:46px;
+    background-color:#fff;
+    color:#000;
+    position:absolute;
+    text-align:center;
+    cursor:pointer;
+}
+.button_bRight span{
+    color:#008ddd;
+}
+.button_c{
+    background-color:#008ddd;
+    color:#fff;
+}
+.button_c span{
+    color:#093d6f;
+}
+
+
 /*********************************************************************
 Slider styles
 *********************************************************************/
