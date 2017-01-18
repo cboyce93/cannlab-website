@@ -122,7 +122,6 @@ Div tag styles
 /* entire container, keeps perspective */
 .flip-container {
 	display:block;
-	background-color: blue;
 	perspective: 1000px;
 	width: 140px;
 }
