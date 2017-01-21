@@ -883,9 +883,20 @@ People styles
 	font-size: calc(0.8vh + 0.8vw);
 }
 
+
 /*********************************************************************
-Funding Sources styles
+People styles
 *********************************************************************/
+
+#people {
+	width: 100%;
+	background-image: url("../img/cnn/mri-scanner.jpg");
+	background-attachment: fixed;
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	background-size: cover;
+	padding: 3% 0 0 0;
+}
 
 #funding {
 	position: relative;
@@ -895,7 +906,10 @@ Funding Sources styles
 	background-color: #FFF;
 	border-top-style: solid;
 	border-top-width: 10px;
-	border-top-color: #EEE; 
+	border-top-color: #EEE;
+	border-bottom-style: solid;
+	border-bottom-width: 10px;
+	border-bottom-color: #EEE;  
 }
 
 #funding_content {
@@ -917,6 +931,84 @@ Funding Sources styles
 	margin: 0;
 }
 
+
+/*********************************************************************
+Participation styles
+*********************************************************************/
+
+#participation {
+	width: 100%;
+	background-image: url("../img/cnn/mri-scanner.jpg");
+	background-attachment: fixed;
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	background-size: cover;
+	padding: 3% 0 0 0;
+}
+
+#form_container {
+	padding: 5vh 0;
+	width: 86%;
+	margin: auto auto;
+	text-align: left;
+}
+
+#form p {
+	font-family: 'URW';
+	font-weight: 100;
+	padding: 8px;
+	color: red;
+	font-size: calc(0.5vh + 0.6vw);	
+}
+
+input {
+    width: 100%;
+    padding: 0.4vh 0.4vw;
+    margin: 1vh 0;
+    box-sizing: border-box;
+}
+
+select {
+    width: 90%;
+    padding: 0.4vh 0.4vw;
+    margin: 1vh 0;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 8px 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+#form_description h7 {
+	font-family: 'URW';
+	font-weight: 1000;
+	font-size: calc(0.6vh + 0.8vw);	
+}
+
+#form_description p {
+	font-family: 'URW';
+	font-weight: 1000;
+	font-size: calc(0.6vh + 0.8vw);
+	text-align: justify;
+	padding: 0 3vh 0 0;
+}
+
+
+#form {
+	width: 56%;
+	margin: 0 0 0 3%;
+	display: inline-block;
+}
+
+#form_description {
+	width: 40%;
+	display: inline-block;
+	height: 500px;
+	vertical-align: top;
+}
 
 /*********************************************************************
 Font-face styles
