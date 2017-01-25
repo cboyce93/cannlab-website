@@ -29,25 +29,6 @@ function introElement(tag, time){
   }, time);
 }
 
-$(function() {
-                $('.slidebttn').hover(
-					function () {
-						var $this 		= $(this);
-						var $slidelem 	= $this.prev();
-						$slidelem.stop().animate({'width':'225px'},300);
-						$slidelem.find('span').stop(true,true).fadeIn();
-						$this.addClass('button_c');
-					},
-					function () {
-						var $this 		= $(this);
-						var $slidelem 	= $this.prev();
-						$slidelem.stop().animate({'width':'70px'},200);
-						$slidelem.find('span').stop(true,true).fadeOut();
-						$this.removeClass('button_c');
-					}
-				);
-            });
-
 /*********************************************************************
 Page Load
 *********************************************************************/
@@ -90,20 +71,22 @@ $(window).scroll(function() {
     if ($(this).scrollTop() > 0.5) {  
         $('#header').addClass("sticky");
         $('#nav').addClass("sticky");
+        $('#back-to-top').addClass("sticky");
         $('#title').addClass("sticky");
         $('#text').addClass("sticky");
-        $('.flip-container').fadeOut(800);
-        $('.flip-container').css("display", "none");
+        $('#logo').fadeOut(800);
+        $('#logo').css("display", "none");
         $('#logo_sticky').fadeIn(800);
         $('#logo_sticky').css("display", "block");
     }
     else {
         $('#header').removeClass("sticky");
         $('#nav').removeClass("sticky");
+        $('#back-to-top').removeClass("sticky");
         $('title').removeClass("sticky");
         $('text').removeClass("sticky");
-        $('.flip-container').fadeIn(800);
-        $('.flip-container').css("display", "block");
+        $('#logo').fadeIn(800);
+        $('#logo').css("display", "block");
         $('#logo_sticky').fadeOut(800);
         $('#logo_sticky').css("display", "none");
     }

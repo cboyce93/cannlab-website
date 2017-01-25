@@ -19,15 +19,8 @@ Last Updated: 12/20/2016
 		<div id="header">
 			<div id="content">
 				<!-- Logo -->
-				<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-					<div class="flipper">
-						<div class="front">
-							<img src="img/cnn/logo-cnn.png" alt="Cognitive Neuroscience & Neuro-Intervention Lab"/>
-						</div>
-						<div class="back">
-							<img src="img/can/logo-can.png" alt="Cognition & Aging Neuroscience Lab"/>
-						</div>
-					</div>
+				<div id="logo">
+						<img src="img/cnn/logo-cnn.png" alt="Cognitive Neuroscience & Neuro-Intervention Lab"/>
 				</div>
 				<!-- Logo End!!! -->
 				
@@ -37,7 +30,7 @@ Last Updated: 12/20/2016
 				<!-- Navigation -->
 				<div id="nav">
 					<ul class="nav">
-						<li><a href="#">CONTACT</a></li>
+						<li><a href="#area_header.contact">CONTACT</a></li>
 						<li><a href="#area_header.participate_header">PARTICIPATE</a></li>
 						<li><a href="#area_header.people">PEOPLE</a></li>
 						<li class="root"><a href="#area_header.publications">PUBLICATIONS</a>
@@ -46,7 +39,11 @@ Last Updated: 12/20/2016
 							<ul class="stem third"><a href="#pointer.funding_sources">Funding Sources</a></ul>
 							<ul class="fader"><div class="publications_fill"></div></ul>
 						</li>
-						<li><a href="#area_header.research">RESEARCH</a>
+						<li class="root"><a href="#area_header.research">RESEARCH</a>
+							<ul class="stem first"><a href="#area_header.current-studies">Current Studies</a></ul>
+							<ul class="stem second"><a href="#area_header.facilities">Facilities</a></ul>
+							<ul class="fader"><div class="publications_fill"></div></ul>
+						</li>
 						<li><a href="#wrapper">HOME</a></li>
 					</ul>
 				</div>
@@ -55,14 +52,7 @@ Last Updated: 12/20/2016
 		</div>
 		<!-- END!!! HEADER & NAVIGATION -->
 		
-		<!-- PARTICIPATE BUTTON -->
-		
-		<div class="participate">
-			<div class="button_wrap">
-            			<a class="button_aRight" id="button_aRight"><span>Participate!</span></a>
-            			<a class="button_bRight slidebttn" id="button_bRight"><img src="img/cnn/participate.png"/></a>
-            		</div>		
-		</div>
+		<div id="back-to-top"><a href ="#wrapper"><img src="img/back-to-top.png"/></a></div>
 		
 		<!-- SLIDER AREA -->
 		<!-- Clear slider area on page load -->
@@ -126,7 +116,7 @@ Last Updated: 12/20/2016
 		</div>
 
 		<!-- Header -->
-		<div id="area_header">
+		<div id="area_header" class="current-studies">
 			<div id="area_tagline"><h4>Find out more about our current studies</h4></div>
 		</div>
 
@@ -146,7 +136,8 @@ Last Updated: 12/20/2016
 					<img class="circle" src="img/cnn/studies/2.jpg"/>
 					<h4>Famous Places <br />& Faces (F.P.F.)</h4>
 					<h6>Project Lead: Benjamin Cassidy<br />Other researcher(s): Fazila Ikram, Kiarash Salehigilani</h6>
-					<p>We are investigating neural network contributions to processing of faces and places and how connectivity changes across the lifespan support higher visual processing.</p>
+					<p>We are investigating neural network contributions to processing of faces and places and how connectivity changes across 
+					the lifespan support higher visual processing.</p>
 
 				</div>
 			</div>
@@ -165,11 +156,40 @@ Last Updated: 12/20/2016
 					<img class="circle" src="img/cnn/studies/4.jpg"/>
 					<h4>Research Examining Age &<br /> Cognitive Health (R.E.A.C.H.)</h4>
 					<h6>Project Lead: Areeba Adnan<br />Other researcher(s): Karin Kantarovich</h6>
-					<p>This project's primary aim is to investigate neural patterns of decline observed in goal-directed cognition in healthy aging and how these patterns can be changed using cognitive intervention.</p>
+					<p>This project's primary aim is to investigate neural patterns of decline observed in goal-directed cognition in healthy aging and how these patterns 
+					can be changed using cognitive intervention.</p>
 				</div>
 			</div>
 		</div>
 		<!-- END!!! ABOUT-->
+		
+		<div id="area_header" class="facilities">
+			<div id="area_tagline"><h4>Facilities</h4></div>
+		</div>
+
+		<!-- Content: First Row -->
+		<div id="research">
+			<div id="research_content">
+				<div class="box">
+					<img class="circle" src="img/cnn/york-university-neuroimaging-centre.png"/>
+					<h4>York University Neuroimaging Centre</h4>
+					<h6>Room 1009, Sherman Health Sciences Research Centre</h6>
+					<p>The Sherman Health Science Research Centre's centerpiece is a neuroimaging laboratory suite that features 
+					the latest functional Magnetic Resonance Imaging (fMRI) technology. This facility gives York's researchers 
+					in-house access to this technology, which has many applications to human health. Read an overview of the facility.</p>
+				</div>
+				<div class="box_right">
+					<img class="circle" src="img/cnn/behavioural-assessment-suite.jpg"/>
+					<h4>Behavioural Assessment Suite</h4>
+					<h6>Room 1006, Sherman Health Sciences Research Centre</h6>
+					<p>The CANN group has a dedicated behavioural assessment suite which is fully equipped for administration of the 
+					NIH Toolbox along with other computer-based and paper-pencil behavioural tasks. The NIH has developed a computer-based 
+					battery of behavioural measures spanning across four domains: emotion, cognition, motor and sensation.</p>
+
+				</div>
+			</div>
+		</div>
+
 
 		<!-- PUBLICATIONS -->
 		<!-- Header -->
@@ -179,42 +199,61 @@ Last Updated: 12/20/2016
 		<div id="publications" class="journal_articles">
 			<h4>----&nbsp; Journal Articles &nbsp;----</h4>
 			<div id="journal_articles">
-				<p>Hunt, A., Turner, G.R., Polatajko, H., Bottari, C., Dawson, D. (2013) Executive function, self-regulation and attribution in acquired brain injury:  a scoping review. Neuropsychological Rehabilitation.<br /><br />
-				Middleton, L., Lam, B., Fahmi, H., Black, S.E., McIlroy, W., Stuss, D., Danells, C., Ween, J. &amp; Turner, G.R.  (In press). Prevalence of domain-specific cognitive impairment in sub-acute and chronic stroke. 
+				<p>Hunt, A., Turner, G.R., Polatajko, H., Bottari, C., Dawson, D. (2013) Executive function, self-regulation and attribution in acquired brain injury:  a scoping review. 
+				Neuropsychological Rehabilitation.<br /><br />
+				Middleton, L., Lam, B., Fahmi, H., Black, S.E., McIlroy, W., Stuss, D., Danells, C., Ween, J. &amp; Turner, G.R.  (In press). Prevalence of domain-specific cognitive 
+				impairment in sub-acute and chronic stroke. 
 				Neurorehabilitation.<br /><br />
 				Spreng, R.N. &amp; Turner, G.R. (2013). Structural covariance of the default network in healthy and pathological aging. Journal of Neuroscience, 33(38). 15226-15234.<br /><br />
-				Patel, R., Spreng, R.N. &amp; Turner, G.R. (2013). Functional brain changes following cognitive and motor skills training: A quantitative meta-analysis. Neurorehabilitation and Neural Repair, 27, 187-199.<br /><br />
-				Spreng, R.N., Sepulcre, J., Turner, G.R., Stevens, W.D., &amp; Schacter, D.L. (2013). Intrinsic architecture underlying the relations among the default, dorsal attention, and frontoparietal control networks of the 
+				Patel, R., Spreng, R.N. &amp; Turner, G.R. (2013). Functional brain changes following cognitive and motor skills training: A quantitative meta-analysis. Neurorehabilitation and 
+				Neural Repair, 27, 187-199.<br /><br />
+				Spreng, R.N., Sepulcre, J., Turner, G.R., Stevens, W.D., &amp; Schacter, D.L. (2013). Intrinsic architecture underlying the relations among the default, dorsal attention, and 
+				frontoparietal control networks of the 
 				human brain. Journal of Cognitive Neuroscience. 25, 74-86.<br /><br />
-				Turner, G.R., McIntosh, A.R., Levine, B. (2012). Dissecting altered functional engagement in TBI and other patient groups through connectivity analysis: one goal, many paths (a response to Hillary). Frontiers 
+				Turner, G.R., McIntosh, A.R., Levine, B. (2012). Dissecting altered functional engagement in TBI and other patient groups through connectivity analysis: one goal, many paths 
+				(a response to Hillary). Frontiers 
 				in Systems Neuroscience. doi: 10.3389/ fnsys.2012.00010.<br /><br />
-				Turner, G.R. &amp; Spreng, R.N. (2012). Executive control and neurocognitive aging: Dissociable patterns of brain activity for working memory and inhibition. Neurobiology of Aging. 33, 826.e1-826.e13.<br /><br />
-				Noakovic-Agopian, T., Chen, A.J.W., Rome, S. Rossi, A., Abrams, G., D’Esposito, M., Turner, G.R. et al., (2012). Assessment of Sub-components of Executive Functioning in Ecologically Valid Settings: 
+				Turner, G.R. &amp; Spreng, R.N. (2012). Executive control and neurocognitive aging: Dissociable patterns of brain activity for working memory and inhibition. Neurobiology of 
+				Aging. 33,
+				 826.e1-826.e13.<br /><br />
+				Noakovic-Agopian, T., Chen, A.J.W., Rome, S. Rossi, A., Abrams, G., D'Esposito, M., Turner, G.R. et al., (2012). Assessment of Sub-components of Executive Functioning in 
+				Ecologically Valid Settings: 
 				The Goal Processing Scale. Journal of Head Trauma Rehabilitation.<br /><br />
-				Chen, A-J.W., Britton, M. Turner, G.R., Vytlacil, J., Thompson, T., D'Esposito, M. (2012). Goal-directed attention alters the tuning of object-based representations in extrastriate cortex. Frontiers in Human 
+				Chen, A-J.W., Britton, M. Turner, G.R., Vytlacil, J., Thompson, T., D'Esposito, M. (2012). Goal-directed attention alters the tuning of object-based representations in 
+				extrastriate cortex. Frontiers in Human 
 				Neuroscience.<br /><br />
-				Crete-Nishihata, M., Baecker, R.M., Massimi, M., Ptak, D., Campigotto, R., Kaufman, L.D., Brickman, A.M., Turner, G.R., Steinerman, J., and Black, S.E. (2012). Reconstructing the Past: Personal Memory 
+				Crete-Nishihata, M., Baecker, R.M., Massimi, M., Ptak, D., Campigotto, R., Kaufman, L.D., Brickman, A.M., Turner, G.R., Steinerman, J., and Black, S.E. (2012). Reconstructing 
+				the Past: Personal Memory 
 				Technologies Are Not Just Personal and Not Just for Memory. Human-Computer Interaction. 27(1-2). 1-32.<br /><br />
-				Turner, G.R. and Spreng, R.N. (2011). Executive functions and neurocognitive aging: Dissociable patterns of brain activity. Neurobiology of Aging. doi: 10.1016/j.neurobiolaging.2011.06.005<br /><br />
-				Chen, A.J-R, Nycum, T., Novakovic-Agopian, T., Turner, G.R., D'Esposito, M. (2011). Training of goal-directed attention regulation enhances control over neural processing for individuals with brain injury. 
+				Turner, G.R. and Spreng, R.N. (2011). Executive functions and neurocognitive aging: Dissociable patterns of brain activity. Neurobiology of Aging. doi: 10.1016/j.neurobiolaging.
+				2011.06.005<br /><br />
+				Chen, A.J-R, Nycum, T., Novakovic-Agopian, T., Turner, G.R., D'Esposito, M. (2011). Training of goal-directed attention regulation enhances control over neural processing for 
+				individuals with brain injury. 
 				Brain, 134 (Pt. 5). 1541-1554<br /><br />
-				Turner, G.R., McIntosh, A.R., Levine, B. (2011). Prefrontal compensatory engagement in TBI is due to altered functional engagement of existing networks and not functional reorganization. 
+				Turner, G.R., McIntosh, A.R., Levine, B. (2011). Prefrontal compensatory engagement in TBI is due to altered functional engagement of existing networks and not functional 
+				reorganization. 
 				Frontiers in Systems Neuroscience, 5:9, doi: 10.3389/fnsys.2011.00009<br /><br />
-				Levine, B., Schweizer, T.A., O’Connor, C., Turner, G.R., Gillingham, S., Stuss, D.T., Manly, T., Robertson, I.H. (2011). Rehabilitation of executive functioning in patients with frontal lobe brain damage: 
+				Levine, B., Schweizer, T.A., O’Connor, C., Turner, G.R., Gillingham, S., Stuss, D.T., Manly, T., Robertson, I.H. (2011). Rehabilitation of executive functioning in patients with 
+				frontal lobe brain damage: 
 				A randomized control trial of Goal Management Training. Frontiers in Human Neuroscience, 5:9, doi: 10.3389/fnhum.2011.00009<br /><br />
-				Koshimori, Y., Turner, G.R. and Green, R.E.A. (2010). Research Digest: Mild-traumatic brain injury - a diagnostic challenge. Neuropsychological Rehabilitation. 20(3), 471-47<br /><br />
-				Koshimori, Y., Turner, G.R., Mikulis, D., Crawley, A., &amp; Green, R.E.A. (2010) Diffusion tensor  imaging vs conventional MRI for single case diagnosis of traumatic brain injury in spinal cord injury patients. 
+				Koshimori, Y., Turner, G.R. and Green, R.E.A. (2010). Research Digest: Mild-traumatic brain injury - a diagnostic challenge. Neuropsychological Rehabilitation. 20(3), 471-47
+				<br /><br />
+				Koshimori, Y., Turner, G.R., Mikulis, D., Crawley, A., &amp; Green, R.E.A. (2010) Diffusion tensor  imaging vs conventional MRI for single case diagnosis of traumatic brain 
+				injury in spinal cord injury patients. 
 				Brain Injury, 24(3), 458-459.<br /><br />
 				Green, R.E.A. and Turner, G.R. (2010). Growing evidence for influence of meditation on brain and behaviour. Neuropsychological Rehabilitation.<br /><br />
-				Levine, B., Svoboda, E.M., Turner, G.R., Mandic, M., &amp; Mackey, A. (2009). Behavioral and functional neuroanatomical correlates of autobiographical memory in isolated retrograde amnesic patient M.L. 
+				Levine, B., Svoboda, E.M., Turner, G.R., Mandic, M., &amp; Mackey, A. (2009). Behavioral and functional neuroanatomical correlates of autobiographical memory in isolated 
+				retrograde amnesic patient M.L. 
 				Neuropsychologia, 47(11). Pages 2188-2196<br /><br />
 				Turner, G.R. and Levine, B. (2008). Augmented neural recruitment during executive control processing following diffuse axonal injury. Neurology, 71, 812-818<br /><br />
 				Turner, G.R. and Green, R.E.A. (2008). Cognitive remediation in aging and ABI: A question of negative plasticity? Neuropsychological Rehabilitation, 18(3), 372-384<br /><br />
-				Schweizer, T.A., Levine, B., Rewilak, D., O'Connor, C., Turner, G.R., Alexander, M.P., Cusimano, M. Manly, T., Robertson, I., &amp; Stuss, D.T. (2008). Rehabilitation of executive functioning after focal 
+				Schweizer, T.A., Levine, B., Rewilak, D., O'Connor, C., Turner, G.R., Alexander, M.P., Cusimano, M. Manly, T., Robertson, I., &amp; Stuss, D.T. (2008). Rehabilitation of 
+				executive functioning after focal 
 				damage to the cerebellum. Neurorehabilitation and Neural Repair, 22, 72-77<br /><br />
 				Turner, G.R. and Levine, B. (2006). fMRI of delayed response performance in healthy adults and the limits of cross-method convergence. Neuroscience, 139(1). 327-337.<br /><br />
 				Green, R.E.A., Turner G.R., Thompson, W.F. (2004). Deficits in facial emotion perception in adults with recent traumatic brain injury. Neuropsychologia, 42. 133-141.<br /><br />
-				Levine, B., Turner, G.R., Tisserand, D.J., Graham, S.I., Hevenor, S.J., McIntosh, A.R. (2004). The functional neuroanatomy of episodic and semantic autobiographical remembering: a prospective study. 
+				Levine, B., Turner, G.R., Tisserand, D.J., Graham, S.I., Hevenor, S.J., McIntosh, A.R. (2004). The functional neuroanatomy of episodic and semantic autobiographical 
+				remembering: a prospective study. 
 				Journal of Cognitive Neuroscience. 1633-1646.
 				</p>
 			</div>
@@ -266,7 +305,11 @@ Last Updated: 12/20/2016
 						
 						Email: grturner@yorku.ca</h6>
 
-					<p>As principal investigator I'm dedicated to building the lab as a global centre of excellence in cognitive neuroscience and neurorehabilitation. My goal is to create a scientific and learning environment that will motivate trainees to push the boundaries of translational neuroscience. When not in the lab, I'm usually chasing my dog who is chasing squirrels throughout the many amazing ravines in the city. Outside of Toronto I spend as much time as possible on the shores of the North (Newfoundland) and South (Brasil) Atlantic.
+					<p>As principal investigator I'm dedicated to building the lab as a global centre of excellence in cognitive 
+					neuroscience and neurorehabilitation. My goal is to create a scientific and learning environment that will 
+					motivate trainees to push the boundaries of translational neuroscience. When not in the lab, I'm usually 
+					chasing my dog who is chasing squirrels throughout the many amazing ravines in the city. Outside of Toronto 
+					I spend as much time as possible on the shores of the North (Newfoundland) and South (Brasil) Atlantic.
 					</p>
 				</div>
 			</div>
@@ -274,7 +317,10 @@ Last Updated: 12/20/2016
 			<div id="person_two">
 				<div id="picture"><img src="img/cnn/people/christina-van-den-brink.jpg" alt="Christina van den Brink" /></div>
 				<div id="description" class="christina"><h4>Christina van den Brink, MA, Ph.D. Student (1st year)</h4>
-					<p>I am a first year PhD student in the Clinical Psychology program (Neuropsychology stream). I defended my Masters this summer investigating sex differences in the influence of brain and lifestyle factors on neurocognitive aging. Broadly, I am interested in investigating mechanisms influencing neuroplasticity in order to ultimately inform treatment intervention and promote brain health. When I'm not in the lab, I love to hike, cook, and be outdoors.
+					<p>I am a first year PhD student in the Clinical Psychology program (Neuropsychology stream). I defended my Masters 
+					this summer investigating sex differences in the influence of brain and lifestyle factors on neurocognitive aging. 
+					Broadly, I am interested in investigating mechanisms influencing neuroplasticity in order to ultimately inform treatment 
+					intervention and promote brain health. When I'm not in the lab, I love to hike, cook, and be outdoors.
 					</p>
 				</div>
 			</div>
@@ -283,7 +329,38 @@ Last Updated: 12/20/2016
 				<div id="picture"><img src="img/cnn/people/anas-saleh.jpg" alt="Anas Saleh" /></div>
 				<div id="description"><h4>Anas Saleh</h4>
 					<h6>Project Manager, Undergraduate Honours Thesis 2016</h6>
-					<p>I am a senior at York University completing my BSc Honours in Psychology. I joined the CANN Lab as a research assistant in November 2014, and then went on to complete my honours thesis under the supervision of Dr. Gary Turner where I studied the cognitive mechanisms underlying attention. Currently, I am working on a follow-up study that I developed with PhD candidate, Sabrina Lemire-Rodger, to further investigate the relationship between the different components of goal-directed attentional control. My interests in neuropsychology are broad, although I have a particular interest in how memory and executive functioning change over the course of one's lifetime. Outside the lab, I enjoy reading, listening to music, and keeping up to date with politics.
+					<p>I am a senior at York University completing my BSc Honours in Psychology. I joined the CANN Lab as a research assistant 
+					in November 2014, and then went on to complete my honours thesis under the supervision of Dr. Gary Turner where I studied 
+					the cognitive mechanisms underlying attention. Currently, I am working on a follow-up study that I developed with PhD candidate, 
+					Sabrina Lemire-Rodger, to further investigate the relationship between the different components of goal-directed attentional 
+					control. My interests in neuropsychology are broad, although I have a particular interest in how memory and executive 
+					functioning change over the course of one's lifetime. Outside the lab, I enjoy reading, listening to music, and keeping up 
+					to date with politics.
+					</p>
+				</div>
+			</div>
+			
+			<div id="person_two">
+				<div id="picture"><img src="img/cnn/people/said-talani.jpg" alt="Said Talani" /></div>
+				<div id="description"><h4>Said Talani</h4>
+					<h6>Undergraduate Honours Thesis Student 2016-2017</h6>
+					<p>I am currently completing my fourth year in the Bachelor of Science Honours Psychology program at York University. 
+					I am working on my thesis under the supervision of Dr. Gary R. Turner and the mentorship of Jaeger Lam, where we are 
+					investigating the neural processes that are associated with interactions between memory and executive function. More 
+					specifically, my study is concerned with the effects of visual familiarity on working memory performance. When I get 
+					some time off you can find me playing soccer, watching nature documentaries, or on the set of various locally filmed 
+					television shows as a background actor.
+					</p>
+				</div>
+			</div>
+			<div id="person_header" class="in"><h4>Volunteers</h4></div>
+			<div id="person">
+				<div id="picture"><img src="img/cnn/people/sydney-gorlick.jpg" alt="Sydney Gorlick" /></div>
+				<div id="description" class="sydney"><h4>Sydney Gorlick</h4>
+					<h6>Undergraduate BA, Research Volunteer</h6>
+					<p> I am a fourth-year undergraduate psychology student at York University in the Specialized-Honours Bachelor of Arts program.
+					 Currently, I am volunteering in the CAN lab as a Region of Interest locator for multiple Autism Spectrum Disorder studies. 
+					 In my spare time I like to travel North America outdoor rock climbing with my dog.
 					</p>
 				</div>
 			</div>
@@ -369,13 +446,89 @@ Last Updated: 12/20/2016
 							<tr>
 								<th><button type="button" onclick="myFunction()">Submit</button></th>
 							</tr>
-
-				
+							
+						</table>
 					</form>
 				</div>
 			</div>
 		</div>
-
+		<div id="area_header" class="contact">
+			<div id="area_tagline"><h4>Contact</h4></div>
+		</div>
+		<div class="overlay" onClick="style.pointerEvents='none'"></div>
+		<iframe
+			width="100%"
+			height="350"
+  			frameborder="0" 
+  			style="border:0"
+  			src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCxU5no7J9VLkIKj0EpA-lxmopHD9QoIuk
+    			&q=Sherman+Health+Science+Research+Centre,+North+York,+ON+M3J+3M4" allowfullscreen>
+		</iframe>
+		
+		<div id="contact">
+			<div id="content">
+					
+				<div id="left">
+					<h5><strong>Need some help finding us?</strong></h5>
+					<p>We are located in room <strong>1006</strong> in the Sherman Health Sciences Research Centre (SHR) at York University in Toronto, Ontario, Canada conveniently
+			 		across the hall from the neuroimaging suite. Please use the maps above to find your way to our lab!<br /><br />Or use the interactive Keele Campus map on the
+			 		<a href="http://www.yorku.ca/web/maps/" target="_new"><u>York University Website.</u></a></p>
+			 	</div>
+			 	<div id="centre">
+			 		<h5><strong>We would love to hear from you!</strong></h5>
+					<p><strong>Mailing Address:</strong><br />
+					Sherman Health Sciences Research Centre<br />
+					York University<br />
+					4700 Keele St.<br />
+					Toronto, ON M3J 1P3<br />
+					<br />
+					<strong>Telephone:</strong> +1(416)-736-2100 ext. 33516<br />
+					<br />
+					<strong>Email:</strong>	cnnlab@yorku.ca</p>
+			 	</div>
+			 	<div id="right">
+			 		<img src="img/cnn/sherman.jpg" alt="Sherman Health Sciences Research Centre"/>
+			 	</div>
+		 	</div>
+		</div>
+		<div id="footer">
+			<div id="content">
+				<div class="col">
+					<h6>Collaborations</h6>
+					<p><a href="#"><strong>Cognitive Aging Neuroscience Lab</strong><br />
+					<i>Dr. W. Dale Stevens</i></a><br /><br />
+					<a href="#"><strong>Laboratory for Brain and Cognition</strong><br />
+					<i>Dr. Nathan Spreng</i></a>
+				</div>
+				<div class="col_two">
+					<h6 class="no-border"></h6>
+					<p><a href="#"><strong>The Mar Lab</strong><br />
+					<i>Dr. Raymond Mar</i></a><br /><br />
+					<a href="#"><strong>The Eastwood Lab</strong><br />
+					<i>Dr. John Eastwood</i></a>
+				</div>
+				<div class="col_three">
+					<h6 class="no-border"></h6>
+					<p><a href="#"><strong>Uppsala Memory Lab</strong><br />
+					<i>Dr. Hedvig Soderlund</i></a><br /><br />
+					<a href="#"><strong>D'Esposito Lab</strong><br />
+					<i>Dr. Mark D'Esposito</i></a>
+				</div>
+				<div class="col_three">
+					<h6 class="no-border"></h6>
+					<p><a href="#"><strong>Levine Lab</strong><br />
+					<i>Dr. Brian Levine</i></a><br /><br /><br /><br />
+				</div>
+				<div class="col_end">
+					<img src="img/cnn/york-university-white.png"/>
+				</div>
+			</div>
+		</div>
+		<div id="bottom">
+			<div id="content"><p>COGNITIVE NEUROSCIENCE & NEURO-INTERVENTION LAB &#169; 2017</p></div>
+		</div>
+			
+		
 		<script>
 		function myFunction() {
 			patternNonAlpha = new RegExp(/[~`!#$%\^&@()*+=\-\[\]\\';,/{}|\\":<>\?]/);
@@ -453,8 +606,6 @@ Last Updated: 12/20/2016
 			
 		}
 		</script>
-
-		
 		
 	</div>
 
