@@ -214,7 +214,7 @@ Navigation styles
 	margin: 0 0 0 4px;
     	text-decoration: none;
 	border-radius: 12px;
-	transition: background-color 0.3s ease-in, color 0.3s ease-in;
+	transition: background-color 0.29s ease-in, color 0.29s ease-in;
 }
 
 .nav a:hover {
@@ -269,31 +269,57 @@ Navigation styles
 }
 
 .first {
-	margin: 2px 0 0 0;
+	margin: 16px 0 0 0;
+	border-left-color:  #719da7;
+	border-left-style: solid;
+	border-left-width: 2px;
+	
 }
 
 .second {
-	margin: 32px 0 0 0;
+	margin: 46px 0 0 0;
+	border-left-color:  #719da7;
+	border-left-style: solid;
+	border-left-width: 2px;
 }
 
 .third {
-	margin: 62px 0 0 0;
+	margin: 76px 0 0 0;
+	border-left-color:  #719da7;
+	border-left-style: solid;
+	border-left-width: 2px;
+}
+
+.first:hover, .second:hover, .third:hover {
+	border-left-color: #FFF;
 }
 
 .publications_fill {
 	position: absolute;
-	width: 133px;
-	height: 90px;
 	background-color: #105a7f;
+	width: 140px;
+	height: 100px;
 	z-index: 0;
 	border-radius: 0px;
-	margin: -10px 0 0 0;
-	left: 4px;
+	margin: 16px 0 0 0;
+	left: -4px;
 }
+
+.publications_fill_research {
+	position: absolute;
+	background-color: #105a7f;
+	width: 135px;
+	height: 70px;
+	z-index: 0;
+	border-radius: 0px;
+	margin: 16px 0 0 0;
+	left: -4px;
+}
+
 
 .fader {
 	opacity: 0;
-	transition: all 0.15s ease-in;
+	transition: all 0.3s ease-in;
 }
 
 
@@ -780,6 +806,11 @@ People styles
 
 #description.christina {
 	margin-top: 3vw;
+}
+
+
+#description.jaeger {
+	margin-top: 2vw;
 }
 
 #description.sydney {
