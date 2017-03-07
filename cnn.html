@@ -597,7 +597,10 @@ Last Updated: 12/20/2016
 					<i>Dr. John Eastwood</i></a>
 				</div>
 				<div class="col_three">
-					<h6 class="no-border"></h6>
+					<h6 class="no-border"></h6> $.ajax({
+        url: 'path/to/php/file',
+        type: 'POST',
+        data: {id:id},
 					<p><a href="http://www.psyk.uu.se/research/research-groups/uppsala-memory-lab/" target="_new"><strong>Uppsala Memory Lab</strong><br />
 					<i>Dr. Hedvig Soderlund</i></a><br /><br />
 					<a href="http://despolab.berkeley.edu/" target="_new"><strong>D'Esposito Lab</strong><br />
@@ -727,11 +730,11 @@ Last Updated: 12/20/2016
 				document.getElementById("form_validation").innerHTML = text;
 			}
 			else if (error == 0) {
-				$.ajax({url: "form.php", async: false, success: function(result){
+				$.ajax({url: "form.php", type: 'POST', data: {'first_name':firstName}
+					, async: false, success: function(result){
             				$("#form").html(result);
         			}});;		
-				//text = "Your response has been submitted successfully.<br /><br />Thank you for your interest!";
-				//document.getElementById("form").innerHTML = text;
+				
 				
 			}
 
