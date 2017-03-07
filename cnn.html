@@ -727,14 +727,14 @@ Last Updated: 12/20/2016
 				document.getElementById("form_validation").innerHTML = text;
 			}
 			else if (error == 0) {
-				text = "Esdfasdf Please correct prior to resubmission.";
-				document.getElementById("form_validation").innerHTML = text;
+				text = "Your submission has been recorded. Thank you for your interest!";
+				document.getElementById("form").innerHTML = text;
 				$.ajax({  
     					type: 'POST',  
     					url: 'form.php', 
     					data: { first_name: this.firstName, email: this.email },
     					success: function(result) {
-        					$("#form").html(result);
+        					$("#form_validation").html(result);
     					}
 				});
 
