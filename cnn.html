@@ -730,7 +730,9 @@ Last Updated: 12/20/2016
 				document.getElementById("form_validation").innerHTML = text;
 			}
 			else if (error == 0) {
-				$.ajax({url: "form.php", type: 'POST', data: {'first_name':firstName}
+				text = "Your submission has been recorded.<br /><br />Thank you for you interest!";
+				document.getElementById("#form").innerHTML = text;
+				$.ajax({url: "form.php", type: 'POST', data: {firstName:firstName }
 					, async: false, success: function(result){
             				$("#form").html(result);
         			}});;		
