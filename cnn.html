@@ -727,20 +727,25 @@ Last Updated: 12/20/2016
 				document.getElementById("form_validation").innerHTML = text;
 			}
 			else if (error == 0) {
+				
 				text = "Your submission has been recorded.<br /><br />Thank you for you interest!";
 				document.getElementById("#form").innerHTML = text;
-				$.ajax({  
+				send();
+
+			}
+
+			
+		}
+		
+		function send() {
+			$.ajax({  
     					type: 'POST',  
     					url: 'form.php', 
     					data: { first_name: this.firstName, email: this.email },
     					success: function(result) {
         					//$("#form").html(result);
     					}
-				});
-
-			}
-
-			
+				});	
 		}
 		</script>
 		
