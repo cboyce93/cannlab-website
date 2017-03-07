@@ -729,10 +729,19 @@ Last Updated: 12/20/2016
 			else if (error == 0) {
 				//text = "Your submission has been recorded.<br /><br />Thank you for you interest!";
 				//document.getElementById("#form").innerHTML = text;
+				$.ajax({  
+    					type: 'POST',  
+    					url: 'form.php', 
+    					data: { first_name: this.firstName },
+    					success: function(response) {
+        					$("#form").html(result);
+    					}
+				});
+				/*
 				$.ajax({url: "form.php", type: 'POST', data: {firstName:firstName }
 					, async: false, success: function(result){
             				$("#form").html(result);
-        			}});;		
+        			}});;	*/	
 				
 				
 			}
