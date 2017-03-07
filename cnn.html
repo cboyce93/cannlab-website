@@ -727,11 +727,11 @@ Last Updated: 12/20/2016
 				document.getElementById("form_validation").innerHTML = text;
 			}
 			else if (error == 0) {
-				$.ajax('form.php', "hello", function(result){
-           				alert(result); // the result variable will contain any text echoed by getResult.php
-        			}		
-				text = "Your response has been submitted successfully.<br /><br />Thank you for your interest!";
-				document.getElementById("form").innerHTML = text;
+				$.ajax({url: "form.php", async: false, success: function(result){
+            				$("#form").html(result);
+        			}});;		
+				//text = "Your response has been submitted successfully.<br /><br />Thank you for your interest!";
+				//document.getElementById("form").innerHTML = text;
 				
 			}
 
