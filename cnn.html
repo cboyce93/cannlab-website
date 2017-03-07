@@ -512,7 +512,7 @@ Last Updated: 12/20/2016
 								<th colspan="3"><h7>Did you complete most of your education in an English speaking program? </h7></th>
 							</tr>
 							<tr>
-								<td colspan="3"><input id="email" maxlength="200" required></td>
+								<td colspan="3"><input id="english" name="english" maxlength="200" required></td>
 								<td><p id="email_validation"></p><td>
 							</tr>
 							<tr>
@@ -520,15 +520,15 @@ Last Updated: 12/20/2016
 								<th><h7>Country:*</h7></th>
 							</tr>
 							<tr>
-								<td><input id="city" maxlength="200" required></td>
-								<td><input id="country" maxlength="200" required></td>
+								<td><input id="city" name="city" maxlength="200" required></td>
+								<td><input id="country" name="country" maxlength="200" required></td>
 								<td><p id="city_country_validation"></p><td>
 							</tr>
 							<tr>
 								<th><h7>Message/Questions:*</h7></th>
 							</tr>
 							<tr>
-								<td colspan="3"><textarea name="message" rows="6" cols="60" maxlength="500"></textarea></td>
+								<td colspan="3"><textarea id="message" name="message" rows="6" cols="60" maxlength="500"></textarea></td>
 								<td><p id="message_validation"></p><td>
 							</tr>
 							<tr>
@@ -707,6 +707,7 @@ Last Updated: 12/20/2016
 			// Get the values of name (first, middle, last)
 			city = document.getElementById("city").value;
 			country = document.getElementById("country").value;
+			Message = document.getElementById("message").value;
 			
 			//  Check for blank inputs
 			if(city == "") {
@@ -740,7 +741,7 @@ Last Updated: 12/20/2016
     						gender: this.gender,
     						city: this.city,
     						country: this.country,
-    						message: this.message },
+    						message: this.Message },
     					success: function(result) {
         					$("#form_validation").html(result);
     					}
