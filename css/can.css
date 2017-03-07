@@ -70,33 +70,6 @@ a {
 	border-width: 1px;
 }
 
-#back-to-cnn {
-	position: fixed;
-	bottom: 4vh;
-	left: 2vh;
-	z-index: 9999;
-	max-width: 3%;
-	opacity: 0.9;
-	transition: height 0.4s ease, opacity 0.4s ease-in;
-}
-
-#back-to-cnn.sticky {
-	opacity: 0.9;
-	transition: height 0.4s ease, opacity 0.4s ease-in;
-}
-
-#back-to-cnn img{
-	border-style: solid;
-	border-color: #719da7;
-	border-width: 1px;
-}
-
-#back-to-cnn img:hover{
-	border-style: solid;
-	border-color: #FFF;
-	border-width: 1px;
-}
-
 
 /*********************************************************************
 Heading font styles
