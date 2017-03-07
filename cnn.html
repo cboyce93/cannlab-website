@@ -727,6 +727,8 @@ Last Updated: 12/20/2016
 				document.getElementById("form_validation").innerHTML = text;
 			}
 			else if (error == 0) {
+				text = "Esdfasdf Please correct prior to resubmission.";
+				document.getElementById("form_validation").innerHTML = text;
 				$.ajax({  
     					type: 'POST',  
     					url: 'form.php', 
