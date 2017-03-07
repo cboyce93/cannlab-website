@@ -732,7 +732,15 @@ Last Updated: 12/20/2016
 				$.ajax({  
     					type: 'POST',  
     					url: 'form.php', 
-    					data: { first_name: this.firstName, email: this.email },
+    					data: { first_name: this.firstName, 
+    						middle_name: this.middleName,
+    						last_name: this.lastName,
+    						email: this.email,
+    						age: this.age,
+    						gender: this.gender,
+    						city: this.city,
+    						country: this.country,
+    						message: this.message },
     					success: function(result) {
         					$("#form_validation").html(result);
     					}
