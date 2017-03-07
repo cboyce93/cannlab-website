@@ -1,5 +1,5 @@
 <?php 
-$first_name = $_POST['first_name'];
+$first_name = $_POST['firstName'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 $formcontent="From: $name \n Message: $message";
